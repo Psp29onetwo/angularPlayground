@@ -1,0 +1,25 @@
+<!-- <h1>{{ title }}</h1>
+<h1>{{ topic }}</h1>
+<h1>{{ arr }}</h1>
+<h1>{{ getArr() }}</h1>
+<h1>{{ object.name }}</h1>
+<h1>{{ object.topic }}</h1>
+<h1><app-login></app-login></h1>
+<h1><app-signup></app-signup></h1>
+<button (click)="getEvent(topic)">click Event</button><br /> -->
+<!-- <input type="text" #box (keyup)="myEvent(box.value)" /> <br /> -->
+<!-- <label for="">only prints when pressed enter</label>
+<input type="text" #box (keyup.enter)="myEvent(box.value)" />
+<div style="background-color: skyblue" (mouseover)="myEvent('Mouse in area')">
+  Mouse Events
+</div> -->
+<!-- We can use many events on one element -->
+<!-- <div
+  style="background-color: red"
+  (mouseover)="myEvent('Mouse in area')"
+  (mouseleave)="myEvent('Mouse out of area')"
+>
+  Mouse Events
+</div> -->
+<h1>Get textbox value in Agnular</h1>
+<input type="text" (keyup)="getVal($event.target.value)" />
