@@ -21,5 +21,27 @@
 >
   Mouse Events
 </div> -->
-<h1>Get textbox value in Agnular</h1>
-<input type="text" (keyup)="getVal($event.target.value)" />
+<h1>NG Conditions</h1>
+<h1 *ngIf="show=='psp' then ifBlock else elseBlock">
+
+</h1>
+<ng-template #ifBlock>
+  <h1>
+    If block
+  </h1>
+  </ng-template>
+<ng-template #elseBlock>
+  <h1>
+    Else Block
+  </h1>
+</ng-template>
+
+<ng-template [ngIf]="clr=='red'">
+<h1>Red</h1>
+</ng-template>
+<ng-template [ngIf]="clr=='green'">
+<h1>Green</h1>
+</ng-template>
+<ng-template [ngIf]="clr=='blue'">
+<h1>Blue</h1>
+</ng-template>

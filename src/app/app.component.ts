@@ -26,4 +26,6 @@ export class AppComponent {
   getVal(val: any) {
     console.log(val);
   }
+  show="psp";
+  clr='red'
 }
